@@ -8,21 +8,20 @@ class InicioController extends Controller
 {
     public function index()
     {
-        $bloque1_1 = app(SeccionController::class)->getSeccionPorTipo(1, 'bloque-1');//slider
+        $bloque1_1 = app(SeccionController::class)->getSeccionPorTipo(1, 'bloque-1'); //slider
 
-        $bloque6_1 = app(SeccionController::class)->getSeccionPorTipo(6, 'bloque-6');//titulo
+        $bloque6_1 = app(SeccionController::class)->getSeccionPorTipo(2, 'bloque-6'); //titulo
 
-        $bloque2_1 = app(SeccionController::class)->getSeccionPorTipo(7, 'bloque-2');//dos columnas
-        $bloque2_2 = app(SeccionController::class)->getSeccionPorTipo(8, 'bloque-2');
-        $bloque2_3 = app(SeccionController::class)->getSeccionPorTipo(9, 'bloque-2');
-        
-        $bloque4_1 = app(SeccionController::class)->getSeccionPorTipo(4, 'bloque-4');//call
+        $bloque2_1 = app(SeccionController::class)->getSeccionPorTipo(3, 'bloque-2'); //dos columnas
+        $bloque2_2 = app(SeccionController::class)->getSeccionPorTipo(4, 'bloque-2');
 
-        $bloque8_1 = app(SeccionController::class)->getSeccionPorTipo(15, 'bloque-8');//testimonio
-        
+        $bloque4_1 = app(SeccionController::class)->getSeccionPorTipo(5, 'bloque-4'); //call
+
+        $bloque8_1 = app(SeccionController::class)->getSeccionPorTipo(6, 'bloque-8'); //testimonio
+
         $posts = $this->getBlog();
 
-        return view('web.inicio', compact('bloque1_1', 'bloque6_1', 'bloque2_1', 'bloque2_2', 'bloque8_1', 'posts', 'bloque4_1', ));
+        return view('web.inicio', compact('bloque1_1', 'bloque6_1', 'bloque2_1', 'bloque2_2', 'bloque4_1', 'bloque8_1', 'posts',));
     }
 
     public function getBlog()

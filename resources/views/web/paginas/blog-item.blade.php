@@ -24,13 +24,13 @@
 
                             <div class="imagen">
 
-                                <img src="{{ asset('assets/imagen/default.jpg') }}">
+                                <img src="{{ asset('assets/imagenes/nosotros/nosotros-1.jpg') }}">
 
                             </div>
 
                             <div class="datos">
-                                <p> Nombre </p>
-                                <span> Cargo</span>
+                                <p> Martin Caycho</p>
+                                <span> Empresario y Escritor </span>
                             </div>
                         </a>
 

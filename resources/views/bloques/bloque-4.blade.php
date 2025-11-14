@@ -43,7 +43,7 @@ $boton_link = $boton['link'];
                 </div>
                 <div class="contenedor_datos">
                     @if (!empty($subtitulo))
-                    <p class="r_parrafo color_2">{!! $subtitulo !!}</p>
+                    <p class="r_sub_titulo_1 color_2">{!! $subtitulo !!}</p>
                     @endif
 
                     @if (!empty($boton_texto))

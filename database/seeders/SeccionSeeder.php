@@ -13,20 +13,21 @@ class SeccionSeeder extends Seeder
     public function run(): void
     {
         $secciones = [
-            [ //1
+            //INICIO
+            [ //1-bloque-1 - SLIDER
                 'nombre' => 'Slider Principal - Inicio',
                 'tipo' => 'bloque-1',
                 'contenido' => [
                     'lista' => [
                         [
                             'id' => 1,
-                            'link' => '',
+                            'link' => '/peru-tierra-de-incautos',
                             'imagen_movil' => asset('assets/imagenes/slider/sliders-movil-1.jpg'),
                             'imagen_computadora' => asset('assets/imagenes/slider/sliders-computadora-1.jpg'),
                         ],
                         [
                             'id' => 2,
-                            'link' => '',
+                            'link' => '/martin-caycho',
                             'imagen_movil' => asset('assets/imagenes/slider/sliders-movil-2.jpg'),
                             'imagen_computadora' => asset('assets/imagenes/slider/sliders-computadora-2.jpg'),
                         ],
@@ -34,12 +35,223 @@ class SeccionSeeder extends Seeder
                 ],
                 'activo' => true,
             ],
-            [ //2
+            [ //2-bloque-6 - TITULO
+                'nombre' => 'Titulo - Nosotros',
+                'tipo' => 'bloque-6',
+                'contenido' => [
+                    'titulo' => 'Bienvenido, soy <span>Martín Caycho</span>',
+                    'subtitulo' => 'Vecino del Agustino, empresario y escritor. Creo firmemente en el poder del esfuerzo, la educación y el espíritu emprendedor para construir un Perú con oportunidades reales para todos.',
+                ],
+                'activo' => true,
+            ],
+            [ //3-bloque-2 - DESARROLLO
+                'nombre' => 'Desarrollo - Nosotros',
+                'tipo' => 'bloque-2',
+                'contenido' => [
+                    'boton' => [
+                        'link' => '/martin-caycho',
+                        'icono' => 'fa-solid fa-user-tie',
+                        'texto' => 'Conóceme',
+                        'fondo_color' => '#333333',
+                        'texto_color' => '#ffffff',
+                    ],
+                    'lista' => [
+                        [
+                            'id' => 1,
+                            'icono' => 'fa-solid fa-hand-holding-dollar',
+                            'texto' => 'Apoyo a los emprendedores y pequeñas empresas',
+                            'icono_color' => '#333333',
+                            'texto_color' => '#333',
+                        ],
+                        [
+                            'id' => 2,
+                            'icono' => 'fa-solid fa-chart-line',
+                            'texto' => 'Promoción de la economía regional',
+                            'icono_color' => '#333333',
+                            'texto_color' => '#333',
+                        ],
+                        [
+                            'id' => 3,
+                            'icono' => 'fa-solid fa-industry',
+                            'texto' => 'Fomento de la producción nacional',
+                            'icono_color' => '#333333',
+                            'texto_color' => '#333',
+                        ],
+                        [
+                            'id' => 4,
+                            'icono' => 'fa-solid fa-graduation-cap',
+                            'texto' => 'Capacitación técnica y laboral',
+                            'icono_color' => '#333333',
+                            'texto_color' => '#333',
+                        ],
+                        [
+                            'id' => 5,
+                            'icono' => 'fa-solid fa-briefcase',
+                            'texto' => 'Impulso a la formalización y al empleo digno',
+                            'icono_color' => '#333333',
+                            'texto_color' => '#333',
+                        ],
+                    ],
+                    'imagen' => asset('assets/imagenes/nosotros/nosotros-1.jpg'),
+                    'invertir' => false,
+                    'imagen_seo' => 'Martín Caicho Autor Peruano',
+                    'titulo' => '',
+                    'titulo_descripcion' => '',
+                    'subtitulo' => 'Un Perú que progresa empieza por su gente',
+                    'subtitulo_descripcion' => 'Trabajo por un país que valore el esfuerzo de su gente. Mis propuestas se enfocan en fortalecer al emprendedor, impulsar la innovación y generar empleo digno para miles de familias peruanas.',
+                ],
+                'activo' => true,
+            ],
+            [ //4-bloque-2 - GESTIÓN
+                'nombre' => 'Gestión - Nosotros',
+                'tipo' => 'bloque-2',
+                'contenido' => [
+                    'boton' => [
+                        'link' => '/blog/necesitamos-gestionar-con-vision-de-futuro',
+                        'icono' => 'fa-solid fa-newspaper',
+                        'texto' => 'Ver publicación',
+                        'fondo_color' => '#333333',
+                        'texto_color' => '#ffffff',
+                    ],
+                    'lista' => [
+                        [
+                            'id' => 1,
+                            'icono' => 'fa-solid fa-handshake',
+                            'texto' => 'Promuevo la transparencia y el uso responsable de los recursos públicos',
+                            'icono_color' => '#333333',
+                            'texto_color' => '#333',
+                        ],
+                        [
+                            'id' => 2,
+                            'icono' => 'fa-solid fa-laptop-code',
+                            'texto' => 'Impulso la digitalización y la modernización del Estado',
+                            'icono_color' => '#333333',
+                            'texto_color' => '#333',
+                        ],
+                        [
+                            'id' => 3,
+                            'icono' => 'fa-solid fa-city',
+                            'texto' => 'Fortalezco la gestión de los gobiernos locales para mejorar los servicios básicos',
+                            'icono_color' => '#333333',
+                            'texto_color' => '#333',
+                        ],
+                        [
+                            'id' => 4,
+                            'icono' => 'fa-solid fa-chalkboard-user',
+                            'texto' => 'Apuesto por la capacitación técnica y profesional de los jóvenes',
+                            'icono_color' => '#333333',
+                            'texto_color' => '#333',
+                        ],
+                        [
+                            'id' => 5,
+                            'icono' => 'fa-solid fa-scale-balanced',
+                            'texto' => 'Combato la corrupción con firmeza y compromiso ciudadano',
+                            'icono_color' => '#333333',
+                            'texto_color' => '#333',
+                        ],
+                    ],
+                    'imagen' => asset('assets/imagenes/nosotros/nosotros-2.jpg'),
+                    'titulo' => '',
+                    'invertir' => true,
+                    'subtitulo' => 'Necesitamos gestionar con visión de futuro',
+                    'imagen_seo' => 'Martín Caicho Autor Peruano',
+                    'titulo_descripcion' => '',
+                    'subtitulo_descripcion' => 'Desde mi experiencia como empresario, sé que ningún proyecto prospera sin orden, planificación y buena administración. Por eso promuevo un Estado que funcione: ágil, digital y al servicio de la gente.',
+                ],
+                'activo' => true,
+            ],
+            [ //5-bloque-4 - CALL
+                'nombre' => 'Call to Action - Inicio',
+                'tipo' => 'bloque-4',
+                'contenido' => [
+                    'boton' => [
+                        'link' => '/peru-tierra-de-incautos',
+                        'icono' => 'fa-solid fa-book',
+                        'texto' => 'Ver mi libro',
+                        'fondo_color' => '#ea8e08',
+                        'texto_color' => '#000000',
+                    ],
+                    'imagen' => asset('assets/imagenes/call-to-action/libro.png'),
+                    'imagen_seo' => 'Libro Perú, Tierra de Incautos - Emerson Smith',
+                    'imagen_fondo' => asset('assets/imagenes/call-to-action/fondo.jpg'),
+                    'imagen_fondo_seo' => 'Fondo promocional del libro Perú, Tierra de Incautos',
+                    'titulo' => 'También soy <span>escritor</span>',
+                    'titulo_descripcion' => 'Mi obra revela verdades, aprendizajes y reflexiones necesarias para entender el Perú actual.',
+                    'subtitulo' => '“Perú, Tierra de Incautos” — Una mirada crítica y constructiva.',
+                    'subtitulo_descripcion' => '',
+                ],
+                'activo' => true,
+            ],
+            [ //6-bloque-8 - TESTIMONIOS
+                'nombre' => 'Testimonios - Inicio',
+                'tipo' => 'bloque-8',
+                'contenido' => [
+                    'titulo' => '¿Qué dicen <span>sobre mí</span>?',
+                    'titulo_descripcion' => '',
+                    'lista' => [
+                        [
+                            'id' => 2,
+                            'imagen' => asset('assets/imagenes/testimonios/testimonio-1.jpg'),
+                            'imagen_seo' => 'Ana Torres',
+                            'titulo' => 'Ana Torres',
+                            'subtitulo' => 'Vecina del Agustino',
+                            'descripcion' => '“Conozco a Martin desde hace años. Siempre fue un veciono solidario, ayudadano a muchas madres de familia de los comedores.”',
+                        ],
+                        [
+                            'id' => 3,
+                            'imagen' => asset('assets/imagenes/testimonios/testimonio-2.jpg'),
+                            'imagen_seo' => 'Jorge Salazar',
+                            'titulo' => 'Jorge Salazar',
+                            'subtitulo' => 'Periodista',
+                            'descripcion' => '“El enfoque crítico y a la vez humano de Martin Caicho es refrescante. Su libro ofrece una mirada necesaria para entender nuestra realidad.”',
+                        ],
+                        [
+                            'id' => 4,
+                            'imagen' => asset('assets/imagenes/testimonios/testimonio-3.jpg'),
+                            'imagen_seo' => 'Lucía Rojas',
+                            'titulo' => 'Lucía Rojas',
+                            'subtitulo' => 'Amiga y Estudiante Universitaria',
+                            'descripcion' => '“Martin siempre ha tenido la capacidad de cuestionar, proponer y dar solución. Es un gran profesional y empresario.”',
+                        ],
+                        [
+                            'id' => 5,
+                            'imagen' => asset('assets/imagenes/testimonios/testimonio-4.jpg'),
+                            'imagen_seo' => 'Pedro Gutiérrez',
+                            'titulo' => 'Pedro Gutiérrez',
+                            'subtitulo' => 'Amigo Empresario',
+                            'descripcion' => '“Martin siempre ha sido un empresario, transparente con bastante humilidad y sentido social.”',
+                        ],
+                    ],
+                ],
+
+                'activo' => true,
+            ],
+
+            //CONOCEME
+            [ //7-bloque-5 - BANNER
+                'nombre' => 'Banner - Nosotros',
+                'tipo' => 'bloque-5',
+                'contenido' => [
+                    'boton' => [
+                        'link' => '',
+                        'icono' => '',
+                        'texto' => '',
+                        'fondo_color' => '',
+                        'texto_color' => '',
+                    ],
+                    'imagen' => asset('assets/imagenes/banner/banner-1.jpg'),
+                    'titulo' => '¿Quiénes soy?',
+                    'subtitulo' => '',
+                    'imagen_seo' => '¿Quiénes somos?',
+                ],
+                'activo' => true,
+            ],
+            [ //8-bloque-2 - Soy Martín Caicho
                 'nombre' => 'Presentación - Inicio',
                 'tipo' => 'bloque-2',
                 'contenido' => [
                     'boton' => [
-                        'link' => 'http://127.0.0.1:8000/peru-tierra-de-incautos',
+                        'link' => '/peru-tierra-de-incautos',
                         'icono' => 'fa-solid fa-book',
                         'texto' => 'Conoce más sobre mi libro',
                         'fondo_color' => '#333333',
@@ -85,7 +297,7 @@ class SeccionSeeder extends Seeder
                 ],
                 'activo' => true,
             ],
-            [ //3
+            [ //9-bloque-3 - También soy
                 'nombre' => 'Soy También - Inicio',
                 'tipo' => 'bloque-3',
                 'contenido' => [
@@ -141,8 +353,37 @@ class SeccionSeeder extends Seeder
                 ],
                 'activo' => true,
             ],
-            [ //4
-                'nombre' => 'Call to Action - Inicio',
+            [ //10-bloque-7 - MISION
+                'nombre' => 'Compromiso con el Perú - Nosotros',
+                'tipo' => 'bloque-7',
+                'contenido' => [
+                    'lista' => [
+                        [
+                            'id' => 1,
+                            'icono' => 'fa-solid fa-bullseye',
+                            'subtitulo' => 'Misión',
+                            'subtitulo_descripcion' => 'Mi misión es inspirar a los peruanos a creer en el cambio a través de la educación, la ética y la acción. Busco promover un liderazgo ciudadano que transforme nuestra realidad desde los valores y el compromiso social.',
+                        ],
+                        [
+                            'id' => 2,
+                            'icono' => 'fa-solid fa-eye',
+                            'subtitulo' => 'Visión',
+                            'subtitulo_descripcion' => 'Sueño con un Perú unido, próspero y transparente, donde el esfuerzo, la innovación y la honestidad sean las bases de nuestro desarrollo.',
+                        ],
+                        [
+                            'id' => 3,
+                            'icono' => 'fa-solid fa-handshake',
+                            'subtitulo' => 'Valores',
+                            'subtitulo_descripcion' => 'Me guío por la honestidad, el trabajo, la justicia social, la empatía y la responsabilidad. Estos principios inspiran cada propuesta y cada acción que realizo por el bienestar de nuestro país.',
+                        ],
+                    ],
+                    'titulo' => 'Estoy <span>comprometido</span> con mi Perú',
+                    'titulo_descripcion' => 'Conóceme un poco más.',
+                ],
+                'activo' => true,
+            ],
+            [ //11-bloque-4 - CALL
+                'nombre' => 'Call to Action - Nosotros',
                 'tipo' => 'bloque-4',
                 'contenido' => [
                     'boton' => [
@@ -163,150 +404,7 @@ class SeccionSeeder extends Seeder
                 ],
                 'activo' => true,
             ],
-            [ //5
-                'nombre' => 'Banner - Nosotros',
-                'tipo' => 'bloque-5',
-                'contenido' => [
-                    'boton' => [
-                        'link' => '',
-                        'icono' => '',
-                        'texto' => '',
-                        'fondo_color' => '',
-                        'texto_color' => '',
-                    ],
-                    'imagen' => asset('assets/imagenes/banner/banner-1.jpg'),
-                    'titulo' => '¿Quiénes soy?',
-                    'subtitulo' => '',
-                    'imagen_seo' => '¿Quiénes somos?',
-                ],
-                'activo' => true,
-            ],
-            [ //6
-                'nombre' => 'Titulo - Nosotros',
-                'tipo' => 'bloque-6',
-                'contenido' => [
-                    'titulo' => 'La <span>Solución</span> para un Perú con futuro',
-                    'subtitulo' => 'Propongo una visión renovadora basada en tres ejes: desarrollo económico inclusivo, fortalecimiento de los valores ciudadanos y modernización de la gestión pública. Desde mi experiencia en el sector privado y la función pública, impulso ideas que buscan unirnos como peruanos para construir un país más justo, productivo y solidario.',
-                ],
-                'activo' => true,
-            ],
-            [ //7
-                'nombre' => 'Desarrollo - Nosotros',
-                'tipo' => 'bloque-2',
-                'contenido' => [
-                    'boton' => [
-                        'link' => '',
-                        'icono' => '',
-                        'texto' => '',
-                        'fondo_color' => '',
-                        'texto_color' => '',
-                    ],
-                    'lista' => [
-                        [
-                            'id' => 1,
-                            'icono' => 'fa-solid fa-hand-holding-dollar',
-                            'texto' => 'Apoyo a los emprendedores y pequeñas empresas',
-                            'icono_color' => '#333333',
-                            'texto_color' => '#333',
-                        ],
-                        [
-                            'id' => 2,
-                            'icono' => 'fa-solid fa-chart-line',
-                            'texto' => 'Promoción de la economía regional',
-                            'icono_color' => '#333333',
-                            'texto_color' => '#333',
-                        ],
-                        [
-                            'id' => 3,
-                            'icono' => 'fa-solid fa-industry',
-                            'texto' => 'Fomento de la producción nacional',
-                            'icono_color' => '#333333',
-                            'texto_color' => '#333',
-                        ],
-                        [
-                            'id' => 4,
-                            'icono' => 'fa-solid fa-graduation-cap',
-                            'texto' => 'Capacitación técnica y laboral',
-                            'icono_color' => '#333333',
-                            'texto_color' => '#333',
-                        ],
-                        [
-                            'id' => 5,
-                            'icono' => 'fa-solid fa-briefcase',
-                            'texto' => 'Impulso a la formalización y al empleo digno',
-                            'icono_color' => '#333333',
-                            'texto_color' => '#333',
-                        ],
-                    ],
-                    'imagen' => 'http://127.0.0.1:8000/assets/imagenes/nosotros/nosotros-1.jpg',
-                    'titulo' => '',
-                    'invertir' => false,
-                    'subtitulo' => 'Desarrollo económico con rostro humano',
-                    'imagen_seo' => 'Martín Caicho Autor Peruano',
-                    'titulo_descripcion' => '',
-                    'subtitulo_descripcion' => 'Promuevo un modelo económico que prioriza al emprendedor, al trabajador y a las familias peruanas. Mi propuesta busca generar empleo digno, impulsar la innovación y fortalecer la producción nacional con justicia social.',
-                ],
-                'activo' => true,
-            ],
-            [ //8
-                'nombre' => 'Gestión - Nosotros',
-                'tipo' => 'bloque-2',
-                'contenido' => [
-                    'boton' => [
-                        'link' => 'http://127.0.0.1:8000/peru-tierra-de-incautos',
-                        'icono' => 'fa-solid fa-book',
-                        'texto' => 'Conoce más sobre mi libro',
-                        'fondo_color' => '#333333',
-                        'texto_color' => '#ffffff',
-                    ],
-                    'lista' => [
-                        [
-                            'id' => 1,
-                            'icono' => 'fa-solid fa-handshake',
-                            'texto' => 'Promuevo la transparencia en el uso de los recursos públicos',
-                            'icono_color' => '#333333',
-                            'texto_color' => '#333',
-                        ],
-                        [
-                            'id' => 2,
-                            'icono' => 'fa-solid fa-laptop-code',
-                            'texto' => 'Impulso la digitalización y el gobierno electrónico',
-                            'icono_color' => '#333333',
-                            'texto_color' => '#333',
-                        ],
-                        [
-                            'id' => 3,
-                            'icono' => 'fa-solid fa-city',
-                            'texto' => 'Fortalezco la gestión de los gobiernos locales',
-                            'icono_color' => '#333333',
-                            'texto_color' => '#333',
-                        ],
-                        [
-                            'id' => 4,
-                            'icono' => 'fa-solid fa-chalkboard-user',
-                            'texto' => 'Apoyo la capacitación constante de los servidores públicos',
-                            'icono_color' => '#333333',
-                            'texto_color' => '#333',
-                        ],
-                        [
-                            'id' => 5,
-                            'icono' => 'fa-solid fa-scale-balanced',
-                            'texto' => 'Combato la corrupción con firmeza y compromiso',
-                            'icono_color' => '#333333',
-                            'texto_color' => '#333',
-                        ],
-                    ],
-                    'imagen' => 'http://127.0.0.1:8000/assets/imagenes/nosotros/nosotros-2.jpg',
-                    'titulo' => '',
-                    'invertir' => true,
-                    'subtitulo' => 'Gestión pública moderna y transparente',
-                    'imagen_seo' => 'Martín Caicho Autor Peruano',
-                    'titulo_descripcion' => '',
-                    'subtitulo_descripcion' => 'Desde mi experiencia en el sector público, defiendo una administración eficiente, meritocrática y enfocada en resultados. Busco eliminar la corrupción, digitalizar los procesos del Estado y acercar la gestión a los ciudadanos.',
-                ],
-                'activo' => true,
-            ],
-            [ //9
+            [ //12-bloque-2 - VALORES
                 'nombre' => 'Valores - Nosotros',
                 'tipo' => 'bloque-2',
                 'contenido' => [
@@ -364,58 +462,9 @@ class SeccionSeeder extends Seeder
                 ],
                 'activo' => true,
             ],
-            [ //10
-                'nombre' => 'Compromiso con el Perú - Nosotros',
-                'tipo' => 'bloque-7',
-                'contenido' => [
-                    'lista' => [
-                        [
-                            'id' => 1,
-                            'icono' => 'fa-solid fa-bullseye',
-                            'subtitulo' => 'Misión',
-                            'subtitulo_descripcion' => 'Mi misión es inspirar a los peruanos a creer en el cambio a través de la educación, la ética y la acción. Busco promover un liderazgo ciudadano que transforme nuestra realidad desde los valores y el compromiso social.',
-                        ],
-                        [
-                            'id' => 2,
-                            'icono' => 'fa-solid fa-eye',
-                            'subtitulo' => 'Visión',
-                            'subtitulo_descripcion' => 'Sueño con un Perú unido, próspero y transparente, donde el esfuerzo, la innovación y la honestidad sean las bases de nuestro desarrollo.',
-                        ],
-                        [
-                            'id' => 3,
-                            'icono' => 'fa-solid fa-handshake',
-                            'subtitulo' => 'Valores',
-                            'subtitulo_descripcion' => 'Me guío por la honestidad, el trabajo, la justicia social, la empatía y la responsabilidad. Estos principios inspiran cada propuesta y cada acción que realizo por el bienestar de nuestro país.',
-                        ],
-                    ],
-                    'titulo' => 'Estoy <span>comprometido</span> con mi Perú',
-                    'titulo_descripcion' => 'Conóceme un poco más.',
-                ],
-                'activo' => true,
-            ],
-            [//10
-                'nombre' => 'Call to Action - Nosotros',
-                'tipo' => 'bloque-4',
-                'contenido' => [
-                    'boton' => [
-                        'link' => 'http://127.0.0.1:8000/peru-tierra-de-incautos',
-                        'icono' => 'fa-solid fa-book',
-                        'texto' => 'Ver libro',
-                        'fondo_color' => '#ea8e08',
-                        'texto_color' => '#000000',
-                    ],
-                    'imagen' => asset('assets/imagenes/call-to-action/familia.png'),
-                    'imagen_seo' => 'Terrenos y lotes en venta por Inmobiliaria Aybar',
-                    'imagen_fondo' => asset('assets/imagenes/call-to-action/fondo.jpg'),
-                    'imagen_fondo_seo' => 'Terrenos y lotes en venta por Inmobiliaria Aybar',
-                    'titulo' => 'Descarga el libro que <span>todo peruano debe leer</span>',
-                    'titulo_descripcion' => '',
-                    'subtitulo' => '“Perú, Tierra de Incautos”, una mirada crítica y constructiva.',
-                    'subtitulo_descripcion' => '',
-                ],
-                'activo' => true,
-            ],
-            [
+
+            //LANDING
+            [ //13-bloque-1 - SLIDER
                 'nombre' => 'Slider - Landing Libro',
                 'tipo' => 'bloque-1',
                 'contenido' => [
@@ -436,7 +485,7 @@ class SeccionSeeder extends Seeder
                 ],
                 'activo' => true,
             ],
-            [
+            [ //14-bloque-2 - Una obra que inspira y transforma
                 'nombre' => 'Presentación - Landing Libro',
                 'tipo' => 'bloque-2',
                 'contenido' => [
@@ -487,7 +536,7 @@ class SeccionSeeder extends Seeder
                 ],
                 'activo' => true,
             ],
-            [
+            [ //15-bloque-4 - CALL INICIO
                 'nombre' => 'Call to Action 1 - Landing Libro',
                 'tipo' => 'bloque-4',
                 'contenido' => [
@@ -509,7 +558,7 @@ class SeccionSeeder extends Seeder
                 ],
                 'activo' => true,
             ],
-            [
+            [ //16-bloque-8 - TESTIMONIOS
                 'nombre' => 'Testimonios - Landing Libro',
                 'tipo' => 'bloque-8',
                 'contenido' => [
@@ -555,7 +604,7 @@ class SeccionSeeder extends Seeder
 
                 'activo' => true,
             ],
-            [
+            [ //17-bloque-2 - Un pensador comprometido con el Perú
                 'nombre' => 'Autor - Landing Libro',
                 'tipo' => 'bloque-2',
                 'contenido' => [
@@ -606,7 +655,7 @@ class SeccionSeeder extends Seeder
                 ],
                 'activo' => true,
             ],
-            [
+            [ //18-bloque-4 - CALL FINAL
                 'nombre' => 'Call to Action Final - Landing Libro',
                 'tipo' => 'bloque-4',
                 'contenido' => [
@@ -628,7 +677,9 @@ class SeccionSeeder extends Seeder
                 ],
                 'activo' => true,
             ],
-            [ //18
+
+            //POLITICAS
+            [ //19-bloque-9 - TERMINOS
                 'nombre' => 'Terminos y Condiciones',
                 'tipo' => 'bloque-9',
                 'contenido' => [
@@ -638,7 +689,7 @@ class SeccionSeeder extends Seeder
                 ],
                 'activo' => true,
             ],
-            [ //19
+            [ //20-bloque-9 - POLITICAS
                 'nombre' => 'Políticas de Privacidad',
                 'tipo' => 'bloque-9',
                 'contenido' => [

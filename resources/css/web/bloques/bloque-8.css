@@ -51,6 +51,8 @@
     display: block;
     margin: 0 auto 15px auto;
     max-width: 450px;
+    border-radius: 50%;
+    box-shadow: var(--sombra);
 }
 
 .bloque_8 .testimonio_datos {
