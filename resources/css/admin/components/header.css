@@ -1,0 +1,25 @@
+.header_layout_pagina {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--color-blanco);
+    box-shadow: var(--sombra);
+    z-index: 9;
+    padding: 0 15px;
+    height: var(--alto-header-admin);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: var(--borde-card);
+}
+
+.layout_menu_hamburguesa_celular {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .layout_menu_hamburguesa_celular {
+        display: block;
+    }
+}

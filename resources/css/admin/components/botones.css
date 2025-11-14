@@ -1,0 +1,103 @@
+.g_boton {
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.g_boton:hover {
+    filter: brightness(1.1);
+}
+
+.g_boton_primary {
+    background-color: #635bff;
+    color: white;
+}
+
+.g_boton_secondary {
+    background-color: #16cdc7;
+    color: white;
+}
+
+.g_boton_success {
+    background-color: #36c76c;
+    color: white;
+}
+
+.g_boton_info {
+    background-color: #46caeb;
+    color: white;
+}
+
+.g_boton_warning {
+    background-color: #f8c20a;
+    color: white;
+}
+
+.g_boton_danger {
+    background-color: #ff6692;
+    color: white;
+}
+
+.g_boton_light {
+    background-color: #eff4fa;
+    color: black;
+}
+
+.g_boton_darkt {
+    background-color: #0a2540;
+    color: white;
+}
+
+.g_activo {
+    color: #36c76c;
+}
+
+.g_desactivado {
+    color: #ff6692;
+}
+
+.g_accion_ver {
+    color: #f8c20a;
+}
+
+.g_accion_editar {
+    color: #46caeb;
+}
+
+.g_resaltar {
+    color: #29343d;
+}
+
+.g_inventario {
+    color: #fa417f;
+}
+
+.g_inferior {
+    color: #98a4ae;
+}
+
+.g_negrita {
+    font-weight: 700;
+}
+
+.g_resumir {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+.g_mayuscula {
+    text-transform: uppercase;
+}
+
+.g_vacio {
+    width: 100%;
+    display: flex;
+    color: #29343d;
+    font-size: 12px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

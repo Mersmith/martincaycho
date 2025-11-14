@@ -1,0 +1,20 @@
+@import "../generales/reset.css";
+@import "../generales/variables.css";
+@import "../generales/alertas.css";
+@import "../generales/paginacion.css";
+@import "../generales/formulario.css";
+@import "../generales/ckeditor.css";
+
+@import "./layout.css";
+@import "./components/menu-principal.css";
+@import "./components/header.css";
+@import "./components/botones.css";
+@import "./components/panel.css";
+@import "./components/pagina-cabecera.css";
+@import "./components/pagina-cuerpo.css";
+@import "./components/tabla.css";
+@import "./components/tabla-cabecera.css";
+@import "./components/dropzone.css";
+@import "./components/formulario.css";
+@import "./components/modal.css";
+@import "./components/sorteable.css";
