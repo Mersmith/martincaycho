@@ -1,0 +1,20 @@
+***********ESTO PONERLO EN LA RAIZ DEL PROYECTO***********
+/public_html/.htaccess
+
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php81 .php .php8 .phtml
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+
+**********************EN ROUTES WEB**********************
+/home/martinca/public_html/routes/web.php
+
+use Illuminate\Support\Facades\Artisan;
+Route::get('/symlink', function () {
+    Artisan::call('storage:link');
+});
+**********************EN ROUTES WEB**********************
