@@ -2,7 +2,7 @@
 $url = $url ?? url()->current();
 $title = $title ?? '';
 $description = $description ?? '';
-$image = $image ?? asset('default-image.jpg');
+$image = $image ?? asset('assets/imagenes/nosotros/nosotros-1.jpg');
 
 $text = urlencode("{$title} - {$description}");
 $encodedUrl = urlencode($url);

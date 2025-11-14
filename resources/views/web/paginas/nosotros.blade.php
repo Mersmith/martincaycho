@@ -1,6 +1,13 @@
 @extends('layouts.web.layout-web')
 
-@section('titulo', 'Aybar Corp')
+@section('titulo', 'Soy Martín Caycho')
+
+@section('descripcion', 'Soy Martín Caycho Autor y Emprendedor Peruano Desde El Agustino para el Perú. Empresario,
+comunicador y apasionado por el desarrollo social. Autor del libro “Perú, Tierra de Incautos”, una mirada crítica y
+reflexiva sobre nuestra realidad nacional, con el deseo de inspirar un cambio verdadero basado en valores, trabajo y
+esperanza.')
+
+@section('imagen', asset('assets/imagenes/nosotros/nosotros-1.jpg'))
 
 @section('contenido')
 

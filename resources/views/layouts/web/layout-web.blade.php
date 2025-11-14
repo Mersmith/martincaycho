@@ -7,7 +7,18 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="description" content="@yield('descripcion')">
 
-    <title>@yield('titulo', config('app.name'))</title>
+    <title>@yield('titulo', config('seo.title'))</title>
+
+    <!-- Meta SEO Facebook y Twitter -->
+    <meta property="og:title" content="@yield('titulo', config('seo.title'))" />
+    <meta property="og:description" content="@yield('descripcion', config('seo.description'))" />
+    <meta property="og:image" content="@yield('imagen', config('seo.image'))" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="@yield('titulo', config('seo.title'))" />
+    <meta name="twitter:description" content="@yield('descripcion', config('seo.description'))" />
+    <meta name="twitter:image" content="@yield('imagen', config('seo.image'))" />
 
     <!-- Estilos generales -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -33,7 +44,7 @@
         @include('partials.back-to-top')
         @yield('contenido')
         @if (isset($slot))
-            {{ $slot }}
+        {{ $slot }}
         @endif
     </main>
 

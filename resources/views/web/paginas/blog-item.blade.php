@@ -4,7 +4,7 @@
 
 @section('descripcion', $post->meta_description ?: '')
 
-@section('imagen', $post->meta_image ? url($post->meta_image) : asset('assets/imagen/default.jpg'))
+@section('imagen', $post->meta_image ? url($post->meta_image) : asset('assets/imagenes/nosotros/nosotros-1.jpg'))
 
 @section('contenido')
     <div class="r_centrar_pagina">
@@ -97,7 +97,7 @@
                         'url' => url()->current(),
                         'title' => $post->meta_title ?? '',
                         'description' => $post->meta_description ?? '',
-                        'image' => $post->meta_image ? url($post->meta_image) : asset('assets/imagen/default.jpg'),
+                        'image' => $post->meta_image ? url($post->meta_image) : asset('assets/imagenes/nosotros/nosotros-1.jpg'),
                     ])
                 </div>
 
