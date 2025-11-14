@@ -1,10 +1,10 @@
 <footer class="web_footer">
     <div class="links_rapido">
-        <a href="">INICIO</a>
-        <a href="">NOSOTROS</a>
-        <a href="">TESTIMONIOS</a>
-        <a href="">BLOG</a>
-        <a href="">CONTACTO</a>
+        <a href="/">INICIO</a>
+        <a href="/martin-caycho">CONÓCEME</a>
+        <a href="/peru-tierra-de-incautos">LIBRO</a>
+        <a href="/blog">BLOG</a>
+        <a href="/contacto">CONTACTO</a>
     </div>
 
     <div class="footer_socials">
@@ -31,8 +31,8 @@
     </div>
 
     <div class="footer_titulo">
-        <blockquote>Tu mejor opción en inversión inmobiliaria</blockquote>
-        <p>Empresa con más de 5 años de experiencia en el negocio inmobiliario.</p>
+        <blockquote>El Perú cambia cuando su gente despierta.</blockquote>
+        <p>Ideas, propuestas y acción para construir una nación que no vuelva a ser tierra de incautos.</p>
     </div>
 
     <div class="centrar_footer_contacto">
@@ -40,24 +40,20 @@
             <div class="item_grid">
                 <i class="fa-regular fa-envelope"></i>
                 <div class="datos">
-                    <a>ventas@shebrad.pe</a>
+                    <a href="mailto:contacto@martincaycho.com">contacto@martincaycho.com</a>
                 </div>
             </div>
             <div class="item_grid">
                 <i class="fa-solid fa-phone"></i>
                 <div class="datos">
-                    <a>993 263 371</a>
-                    <a>(01) 7124722</a>
+                    <a href="tel:+51993263371">993 263 371</a>
                 </div>
             </div>
             <div class="item_grid">
                 <i class="fa-solid fa-house"></i>
                 <div class="datos">
-                    <p>Atención al cliente:</p>
-                    <a>Calle Las Orquídeas 585</a>
-                    <br>
-                    <p>Atención al cliente:</p>
-                    <a>San Isidro - Lima</a>
+                    <p>Desde:</p>
+                    <a>El Agustino</a>
                 </div>
             </div>
         </div>
@@ -86,7 +82,7 @@
         </div>
 
         <div class="footer_copy">
-            <p>© <strong>Aybar Corp</strong>.</p>
+            <p>© {{ date('Y') }} <strong>{{ config('app.name') }}</strong>.</p>
             <p>Todos los derechos reservados.</p>
         </div>
     </div>

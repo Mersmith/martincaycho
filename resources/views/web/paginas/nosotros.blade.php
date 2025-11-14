@@ -9,13 +9,14 @@
 <div class="r_centrar_pagina">
     <div class="r_pading_pagina">
         <div class="r_contenedor_columna">
-
             @include('bloques.bloque-2', ['p_elemento' => $bloque2_1])
 
-            @include('bloques.bloque-3', ['p_elemento' => $bloque3_1])
-
-
+            @include('bloques.bloque-2', ['p_elemento' => $bloque2_2])
         </div>
+    </div>
+
+    <div class="r_contenedor_columna">
+        @include('bloques.bloque-3', ['p_elemento' => $bloque3_1])
     </div>
 
     <div class="r_pading_pagina">

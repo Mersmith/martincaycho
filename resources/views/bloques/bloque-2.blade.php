@@ -61,7 +61,7 @@ $boton_link = $boton['link'];
         @endif
 
         @if (!empty($boton_texto))
-        <a @if (!empty($boton_link)) href="{{ $boton_link }}" @endif target="_blank" class="btn-whatsapp"
+        <a @if (!empty($boton_link)) href="{{ $boton_link }}" @endif class="btn-whatsapp"
             style="background-color: {{ $boton_fondo_color }}; color: {{ $boton_texto_color }}">
             @if (!empty($boton_icono))
             <i class="{{ $boton_icono }}"></i>

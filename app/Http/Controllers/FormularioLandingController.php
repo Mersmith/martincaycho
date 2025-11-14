@@ -11,17 +11,17 @@ class FormularioLandingController extends Controller
 {
     public function index()
     {
-        $bloque1_1 = app(SeccionController::class)->getSeccionPorTipo(1, 'bloque-1');
+        $bloque1_1 = app(SeccionController::class)->getSeccionPorTipo(13, 'bloque-1');
 
-        $bloque2_1 = app(SeccionController::class)->getSeccionPorTipo(13, 'bloque-2');
+        $bloque2_1 = app(SeccionController::class)->getSeccionPorTipo(14, 'bloque-2');
 
-        $bloque4_1 = app(SeccionController::class)->getSeccionPorTipo(14, 'bloque-4');
+        $bloque4_1 = app(SeccionController::class)->getSeccionPorTipo(15, 'bloque-4');
 
-        $bloque8_1 = app(SeccionController::class)->getSeccionPorTipo(15, 'bloque-8');
+        $bloque8_1 = app(SeccionController::class)->getSeccionPorTipo(16, 'bloque-8');
 
-        $bloque2_2 = app(SeccionController::class)->getSeccionPorTipo(16, 'bloque-2');
+        $bloque2_2 = app(SeccionController::class)->getSeccionPorTipo(17, 'bloque-2');
 
-        $bloque4_2 = app(SeccionController::class)->getSeccionPorTipo(17, 'bloque-4');
+        $bloque4_2 = app(SeccionController::class)->getSeccionPorTipo(18, 'bloque-4');
 
         return view('web.landing.index', compact('bloque1_1', 'bloque2_1', 'bloque4_1', 'bloque8_1', 'bloque2_2', 'bloque4_2'));
     }
