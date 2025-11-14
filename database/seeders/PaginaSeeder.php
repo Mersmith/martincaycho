@@ -12,7 +12,7 @@ class PaginaSeeder extends Seeder
      */
     public function run(): void
     {
-        $paginas = [   
+        $paginas = [
             [
                 'tipo' => 'secciones',
                 'titulo' => 'Terminos y Condiciones',
@@ -21,7 +21,7 @@ class PaginaSeeder extends Seeder
                     'lista' => [
                         [
                             'id' => 1,
-                            'seccion_id' => 18,
+                            'seccion_id' => 19,
                             'tipo' => 'bloque-9',
                         ],
                     ],
@@ -36,7 +36,7 @@ class PaginaSeeder extends Seeder
                     'lista' => [
                         [
                             'id' => 1,
-                            'seccion_id' => 19,
+                            'seccion_id' => 20,
                             'tipo' => 'bloque-9',
                         ],
                     ],

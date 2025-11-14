@@ -32,8 +32,8 @@
                 <div class="contacto_formulario" id="formulario-libro">
                     <div class="r_contenedor_columna">
                         @include('partials.titulo-encabezado', [
-                        'titulo' => 'Regístrate y <span>recibe tu libro</span>',
-                        'descripcion' => 'Completa tus datos correctamente y te enviaremos.',
+                        'titulo' => 'Regístrate y <span>recibe el libro</span>',
+                        'descripcion' => 'Completa tus datos correctamente y te enviaré.',
                         'alineacion' => 'center',
                         'color' => 'color_1',
                         ])
@@ -43,7 +43,13 @@
                             <i class="fa-solid fa-circle-check"></i>
                             <div>{{ session('success') }}</div>
                         </div>
-                        @endif
+
+                        @include('partials.visualizador-pdf', [
+                        'link' => asset('assets/pdf/peru-tierra-de-incautos.pdf'),
+                        'textoBoton' => 'Leer Libro Completo'
+                        ])
+
+                        @else
 
                         @if ($errors->any())
                         <div class="g_alerta_error">
@@ -99,6 +105,7 @@
                             <button type="submit"><i class="fa-solid fa-paper-plane"></i> Enviar</button>
                         </form>
 
+                        @endif
                     </div>
                 </div>
             </div>
